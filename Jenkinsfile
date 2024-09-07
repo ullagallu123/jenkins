@@ -17,5 +17,10 @@ pipeline {
              sh 'docker version'   
             }
         }
+        stage('Hello') {
+            steps{
+             echo "Hello world"   
+            }
+        }
     }
 }
